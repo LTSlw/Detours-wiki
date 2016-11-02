@@ -10,7 +10,7 @@ edits at any time in the future.
 
 ------------------------------------------------------------------------
 
-![](Images\Detours_ovr_Technical_Figure_3.png)
+![](Images/Detours_ovr_Technical_Figure_3.png)
 
 ###### Figure 3. Format of a Windows PE binary file.
 
@@ -28,7 +28,7 @@ a given binary.
 
 ------------------------------------------------------------------------
 
-![](Images\Detours_ovr_Technical_Figure_4.png)
+![](Images/Detours_ovr_Technical_Figure_4.png)
 
 ###### Figure 4. Format of a Detours-modified binary file.
 

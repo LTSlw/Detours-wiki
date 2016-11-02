@@ -34,7 +34,7 @@ This technical overview of Detours is divided into four sections:
 
 -   [Interception of Binary Functions](OverviewInterception)
 -   [Using Detours](OverviewUsing)
--   [Payloads and DLL Import Editing](OwerviewPayloads)
+-   [Payloads and DLL Import Editing](OverviewPayloads)
 -   [Detouring 32-bit and 64-bit Processes](OverviewHelpers)
 
 Developers new to Detours will find the it very useful to read all four

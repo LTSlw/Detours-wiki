@@ -21,7 +21,7 @@ of control for function invocation with and without interception.
 
 ------------------------------------------------------------------------
 
-![](Images\Detours_ovr_Technical_Figure_1.png)
+![](Images/Detours_ovr_Technical_Figure_1.png)
 
 ###### Figure 1. Control flow of invocation without Detours and with Detours.
 

@@ -28,7 +28,7 @@ Remarks
 [DetourBinaryOpen](DetourBinaryOpen) .
 
 For more information on binary editing with Detours and paylods, see
-[Payloads and DLL Import Editing](OwerviewPayloads) in the [Detours
+[Payloads and DLL Import Editing](OverviewPayloads) in the [Detours
 Overview](Home).
 
 Return value
