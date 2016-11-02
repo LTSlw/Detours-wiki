@@ -45,7 +45,7 @@ returned to point to the original target function.
 
 ------------------------------------------------------------------------
 
-![](Images\Detours_ovr_Technical_Figure_2.png)
+![](Images/Detours_ovr_Technical_Figure_2.png)
 
 ###### Figure 2. Trampoline and target functions, before (on the left) and after (on the right) insertion of the detour.
 
