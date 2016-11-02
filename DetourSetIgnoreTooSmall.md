@@ -25,7 +25,7 @@ Parameters
     If this parameter is set to **TRUE**, these functions will be
     ignored if encountered. If this parameter is set to **FALSE**, then
     encountering a function too small to be detoured will cause
-    [DetourTransactionCommit](DetourTransactionCommit.md) to fail.
+    [DetourTransactionCommit](DetourTransactionCommit) to fail.
 
 Remarks
 -------
@@ -35,10 +35,10 @@ detour a target function that is too small for detouring is sufficient
 error to cause abort of the current detour transaction.
 
 For more information on using Detours to intercept function calls, see
-[Interception of Binary Functions](OverviewInterception.md) or [Using
-Detours](OverviewUsing.md) in the [Detours Overview](Home.md).
+[Interception of Binary Functions](OverviewInterception) or [Using
+Detours](OverviewUsing) in the [Detours Overview](Home).
 
 Related Samples
 ---------------
 
-[Traceapi](SampleTraceapi.md).
+[Traceapi](SampleTraceapi).

@@ -26,8 +26,8 @@ Parameters
 Remarks
 -------
 
-The [DetourAttach](DetourAttach.md) and
-[DetourAttachEx](DetourAttachEx.md) APIs allocate a trampoline for
+The [DetourAttach](DetourAttach) and
+[DetourAttachEx](DetourAttachEx) APIs allocate a trampoline for
 each detoured function. To avoid fragmenting memory, Detours attempts to
 create the region from which it allocates trampoline as close as
 possible to the code being detoured. In some circumstances, trampoline
@@ -40,17 +40,17 @@ virtual memory required for the process.
 To avoid these DLL-relocation collisions, Detours is programmed to avoid
 placing any trampolines in region of memory called the "system region".
 By default, this region is from 0x70000000 to 0x80000000. Call
-[DetourSetSystemRegionLowerBound](DetourSetSystemRegionLowerBound.md)
+[DetourSetSystemRegionLowerBound](DetourSetSystemRegionLowerBound)
 and
-[DetourSetSystemRegionUpperBound](DetourSetSystemRegionUpperBound.md)
+[DetourSetSystemRegionUpperBound](DetourSetSystemRegionUpperBound)
 and to change the region. For example, one might increase the region if
 the CLR is loaded into a process after system DLLs are detoured.
 
 For more information on using Detours to intercept function calls, see
-[Interception of Binary Functions](OverviewInterception.md) or [Using
-Detours](OverviewUsing.md) in the [Detours Overview](Home.md).
+[Interception of Binary Functions](OverviewInterception) or [Using
+Detours](OverviewUsing) in the [Detours Overview](Home).
 
 Related Samples
 ---------------
 
-[Region](SampleRegion.md).
+[Region](SampleRegion).

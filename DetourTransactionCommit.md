@@ -25,35 +25,35 @@ Error codes
 
 **Other**
 :   Error code returned by API within
-    [DetourAttach](DetourAttach.md),
-    [DetourAttachEx](DetourAttachEx.md), or
-    [DetourDetach](DetourAttachEx.md) that caused transaction
+    [DetourAttach](DetourAttach),
+    [DetourAttachEx](DetourAttachEx), or
+    [DetourDetach](DetourAttachEx) that caused transaction
     to fail.
 
 Remarks
 -------
 
 `DetourTransactionCommit` commits the current transaction created with
-[DetourTransactionBegin](DetourTransactionBegin.md). Commiting a
+[DetourTransactionBegin](DetourTransactionBegin). Commiting a
 transaction make all updates specified in any calls to the
-[DetourAttach](DetourAttach.md),
-[DetourAttachEx](DetourAttachEx.md),
-[DetourDetach](DetourDetach.md), or
-[DetourUpdateThread](DetourUpdateThread.md) APIs within the
+[DetourAttach](DetourAttach),
+[DetourAttachEx](DetourAttachEx),
+[DetourDetach](DetourDetach), or
+[DetourUpdateThread](DetourUpdateThread) APIs within the
 transaction.
 
 For more information on using Detours to intercept function calls, see
-[Interception of Binary Functions](OverviewInterception.md) or [Using
-Detours](OverviewUsing.md) in the [Detours Overview](Home.md).
+[Interception of Binary Functions](OverviewInterception) or [Using
+Detours](OverviewUsing) in the [Detours Overview](Home).
 
 Related Samples
 ---------------
 
-[Commem](SampleCommem.md), [Cping](SampleCping.md),
-[Dtest](SampleDtest.md), [Excep](SampleExcep.md),
-[FindFunc](SampleFindFunc.md), [Member](SampleMember.md),
-[Simple](SampleSimple.md), [Slept](SampleSlept.md),
-[Traceapi](SampleTraceapi.md), [Tracebld](SampleTracebld.md),
-[Tracelnk](SampleTracelnk.md), [Tracemem](SampleTracemem.md),
-[Tracereg](SampleTracereg.md), [Traceser](SampleTraceser.md),
-[Tracetcp](SampleTracetcp.md), [Tryman](SampleTryman.md).
+[Commem](SampleCommem), [Cping](SampleCping),
+[Dtest](SampleDtest), [Excep](SampleExcep),
+[FindFunc](SampleFindFunc), [Member](SampleMember),
+[Simple](SampleSimple), [Slept](SampleSlept),
+[Traceapi](SampleTraceapi), [Tracebld](SampleTracebld),
+[Tracelnk](SampleTracelnk), [Tracemem](SampleTracemem),
+[Tracereg](SampleTracereg), [Traceser](SampleTraceser),
+[Tracetcp](SampleTracetcp), [Tryman](SampleTryman).

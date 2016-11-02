@@ -2,15 +2,15 @@ Tracereg
 ========
 
 Traces activity through the registry APIs. Output from the trace is
-logged to the [syelogd.exe](SampleSyelog.md) deamon.
+logged to the [syelogd.exe](SampleSyelog) deamon.
 
 Uses
 ----
 
-[DetourAttach](DetourAttach.md),
-[DetourCreateProcessWithDllEx](DetourCreateProcessWithDllEx.md),
-[DetourDetach](DetourDetach.md),
-[DetourEnumerateModules](DetourEnumerateModules.md),
-[DetourTransactionBegin](DetourTransactionBegin.md),
-[DetourTransactionCommit](DetourTransactionCommit.md),
-[DetourUpdateThread](DetourUpdateThread.md).
+[DetourAttach](DetourAttach),
+[DetourCreateProcessWithDllEx](DetourCreateProcessWithDllEx),
+[DetourDetach](DetourDetach),
+[DetourEnumerateModules](DetourEnumerateModules),
+[DetourTransactionBegin](DetourTransactionBegin),
+[DetourTransactionCommit](DetourTransactionCommit),
+[DetourUpdateThread](DetourUpdateThread).

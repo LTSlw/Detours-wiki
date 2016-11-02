@@ -7,9 +7,9 @@ trampolines.
 Uses
 ----
 
-[DetourAttach](DetourAttach.md),
-[DetourTransactionBegin](DetourTransactionBegin.md),
-[DetourTransactionCommit](DetourTransactionCommit.md),
-[DetourSetSystemRegionLowerBound](DetourSetSystemRegionLowerBound.md),
-[DetourSetSystemRegionUpperBound](DetourSetSystemRegionUpperBound.md),
-[DetourUpdateThread](DetourUpdateThread.md).
+[DetourAttach](DetourAttach),
+[DetourTransactionBegin](DetourTransactionBegin),
+[DetourTransactionCommit](DetourTransactionCommit),
+[DetourSetSystemRegionLowerBound](DetourSetSystemRegionLowerBound),
+[DetourSetSystemRegionUpperBound](DetourSetSystemRegionUpperBound),
+[DetourUpdateThread](DetourUpdateThread).

@@ -27,32 +27,32 @@ Remarks
 detaching detours.
 
 After beginning a transaction, a program calls the
-[DetourAttach](DetourAttach.md) or
-[DetourAttachEx](DetourAttachEx.md) API to attach a detour to a
-target function, calls the [DetourDetach](DetourDetach.md) API to
+[DetourAttach](DetourAttach) or
+[DetourAttachEx](DetourAttachEx) API to attach a detour to a
+target function, calls the [DetourDetach](DetourDetach) API to
 detach a detour from a target function, or calls the
-[DetourUpdateThread](DetourUpdateThread.md) API to include include
+[DetourUpdateThread](DetourUpdateThread) API to include include
 a thread in the transaction update.
 
 The attach, detach, and thread operations do not take effect until the
 program commits the transaction using the
-[DetourTransactionCommit](DetourTransactionCommit.md) or
-[DetourTransactionCommitEx](DetourTransactionCommitEx.md) API.
+[DetourTransactionCommit](DetourTransactionCommit) or
+[DetourTransactionCommitEx](DetourTransactionCommitEx) API.
 Alternatively, the program can abort the transaction using the
-[DetourTransactionAbort](DetourTransactionAbort.md) API.
+[DetourTransactionAbort](DetourTransactionAbort) API.
 
 For more information on using Detours to intercept function calls, see
-[Interception of Binary Functions](OverviewInterception.md) or [Using
-Detours](OverviewUsing.md) in the [Detours Overview](Home.md).
+[Interception of Binary Functions](OverviewInterception) or [Using
+Detours](OverviewUsing) in the [Detours Overview](Home).
 
 Related Samples
 ---------------
 
-[Commem](SampleCommem.md), [Cping](SampleCping.md),
-[Dtest](SampleDtest.md), [Excep](SampleExcep.md),
-[FindFunc](SampleFindFunc.md), [Member](SampleMember.md),
-[Simple](SampleSimple.md), [Slept](SampleSlept.md),
-[Traceapi](SampleTraceapi.md), [Tracebld](SampleTracebld.md),
-[Tracelnk](SampleTracelnk.md), [Tracemem](SampleTracemem.md),
-[Tracereg](SampleTracereg.md), [Traceser](SampleTraceser.md),
-[Tracetcp](SampleTracetcp.md), [Tryman](SampleTryman.md).
+[Commem](SampleCommem), [Cping](SampleCping),
+[Dtest](SampleDtest), [Excep](SampleExcep),
+[FindFunc](SampleFindFunc), [Member](SampleMember),
+[Simple](SampleSimple), [Slept](SampleSlept),
+[Traceapi](SampleTraceapi), [Tracebld](SampleTracebld),
+[Tracelnk](SampleTracelnk), [Tracemem](SampleTracemem),
+[Tracereg](SampleTracereg), [Traceser](SampleTraceser),
+[Tracetcp](SampleTracetcp), [Tryman](SampleTryman).

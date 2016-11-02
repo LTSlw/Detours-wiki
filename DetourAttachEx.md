@@ -59,8 +59,8 @@ Remarks
 `DetourAttachEx` attaches a detour to a target function and retrieves
 additional detail about the ultimate target as part of the current
 transaction opened by the
-[DetourTransactionBegin](DetourTransactionBegin.md) API.
+[DetourTransactionBegin](DetourTransactionBegin) API.
 
 For more information on using Detours to intercept function calls, see
-[Interception of Binary Functions](OverviewInterception.md) or [Using
-Detours](OverviewUsing.md) in the [Detours Overview](Home.md).
+[Interception of Binary Functions](OverviewInterception) or [Using
+Detours](OverviewUsing) in the [Detours Overview](Home).

@@ -6,7 +6,7 @@ Demostrates how to detour a class member function.
 Uses
 ----
 
-[DetourAttach](DetourAttach.md),
-[DetourTransactionBegin](DetourTransactionBegin.md),
-[DetourTransactionCommit](DetourTransactionCommit.md),
-[DetourUpdateThread](DetourUpdateThread.md).
+[DetourAttach](DetourAttach),
+[DetourTransactionBegin](DetourTransactionBegin),
+[DetourTransactionCommit](DetourTransactionCommit),
+[DetourUpdateThread](DetourUpdateThread).

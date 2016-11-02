@@ -21,7 +21,7 @@ Parameters
 
 *pBinary*
 :   Pointer to the binary opened by
-    [DetourBinaryOpen](DetourBinaryOpen.md) .
+    [DetourBinaryOpen](DetourBinaryOpen) .
 
 *pGuid*
 :   Pointer to the variable to receive the GUID of the next payload.
@@ -39,11 +39,11 @@ Remarks
 -------
 
 `DetourBinaryEnumeratePayloads` enumerates all of the payloads in a
-binary opened by [DetourBinaryOpen](DetourBinaryOpen.md) .
+binary opened by [DetourBinaryOpen](DetourBinaryOpen) .
 
 For more information on binary editing with Detours and paylods, see
-[Payloads and DLL Import Editing](OwerviewPayloads.md) in the [Detours
-Overview](Home.md).
+[Payloads and DLL Import Editing](OwerviewPayloads) in the [Detours
+Overview](Home).
 
 Return value
 ------------

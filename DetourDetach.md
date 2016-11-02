@@ -46,19 +46,19 @@ Remarks
 
 `DetourDetach` detaches a detour from a target function as part of the
 current transaction opened by the
-[DetourTransactionBegin](DetourTransactionBegin.md) API.
+[DetourTransactionBegin](DetourTransactionBegin) API.
 
 For more information on using Detours to intercept function calls, see
-[Interception of Binary Functions](OverviewInterception.md) or [Using
-Detours](OverviewUsing.md) in the [Detours Overview](Home.md).
+[Interception of Binary Functions](OverviewInterception) or [Using
+Detours](OverviewUsing) in the [Detours Overview](Home).
 
 Related Samples
 ---------------
 
-[Commem](SampleCommem.md), [Cping](SampleCping.md),
-[FindFunc](SampleFindFunc.md), [Member](SampleMember.md),
-[Simple](SampleSimple.md), [Slept](SampleSlept.md),
-[Traceapi](SampleTraceapi.md), [Tracebld](SampleTracebld.md),
-[Tracelnk](SampleTracelnk.md), [Tracemem](SampleTracemem.md),
-[Tracereg](SampleTracereg.md), [Traceser](SampleTraceser.md),
-[Tracetcp](SampleTracetcp.md), [Tryman](SampleTryman.md).
+[Commem](SampleCommem), [Cping](SampleCping),
+[FindFunc](SampleFindFunc), [Member](SampleMember),
+[Simple](SampleSimple), [Slept](SampleSlept),
+[Traceapi](SampleTraceapi), [Tracebld](SampleTracebld),
+[Tracelnk](SampleTracelnk), [Tracemem](SampleTracemem),
+[Tracereg](SampleTracereg), [Traceser](SampleTraceser),
+[Tracetcp](SampleTracetcp), [Tryman](SampleTryman).

@@ -5,7 +5,7 @@ Create a new process and load a DLL into it. Chooses the appropriate
 32-bit or 64-bit DLL based on the target process.
 
 Replaces
-[DetourCreateProcessWithDll](DetourCreateProcessWithDll.md).
+[DetourCreateProcessWithDll](DetourCreateProcessWithDll).
 
 Definition
 ----------
@@ -111,18 +111,18 @@ contain a exported function with ordinal \#1.
 
 After the target DLL has been loaded, it can reverse changes to the
 in-memory import table by calling
-[`DetourRestoreAfterWith`](DetourRestoreAfterWith.md). To
+[`DetourRestoreAfterWith`](DetourRestoreAfterWith). To
 facilitate reversing these changes, `DetourCreateProcessWithDllEx`
 copies relevant reversal data into a payload in the target process using
-the [`DetourCopyPayloadToProcess`](DetourCopyPayloadToProcess.md)
+the [`DetourCopyPayloadToProcess`](DetourCopyPayloadToProcess)
 API. The loaded DLL should call the
-[`DetourRestoreAfterWith`](DetourRestoreAfterWith.md) API to
+[`DetourRestoreAfterWith`](DetourRestoreAfterWith) API to
 restores the contents of the import table.
 
 Related Samples
 ---------------
 
-[Traceapi](SampleTraceapi.md), [Tracebld](SampleTracebld.md),
-[Tracemem](SampleTracemem.md), [Tracereg](SampleTracereg.md),
-[Traceser](SampleTraceser.md), [Tryman](SampleTryman.md),
-[Withdll](SampleWithdll.md).
+[Traceapi](SampleTraceapi), [Tracebld](SampleTracebld),
+[Tracemem](SampleTracemem), [Tracereg](SampleTracereg),
+[Traceser](SampleTraceser), [Tryman](SampleTryman),
+[Withdll](SampleWithdll).

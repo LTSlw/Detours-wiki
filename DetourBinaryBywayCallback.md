@@ -3,7 +3,7 @@ PF\_DETOUR\_BINARY\_BYWAY\_CALLBACK
 
 Pointer to function called once for each existing byway or opportunity
 to insert a new byway while editing an import table using the
-[DetourBinaryEditImports](DetourEnumerateExports.md) API.
+[DetourBinaryEditImports](DetourEnumerateExports) API.
 
 Definition
 ----------
@@ -20,7 +20,7 @@ Parameters
 *pContext*
 :   Umodified program specific context pointer passed as pContext
     argument to
-    [DetourBinaryEditImports](DetourBinaryEditImports.md).
+    [DetourBinaryEditImports](DetourBinaryEditImports).
 
 *pszFile*
 :   Name of byway listed in current import table or NULL.

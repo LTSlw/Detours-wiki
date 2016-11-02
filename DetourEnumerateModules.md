@@ -27,15 +27,15 @@ Remarks
 
 `DetourEnumerateModules` enumerates all of the PE binaries loaded into a
 process. Once a module has been enumerated, its entry point can be
-located with the [DetourGetEntryPoint](DetourGetEntryPoint.md) API,
+located with the [DetourGetEntryPoint](DetourGetEntryPoint) API,
 its exports can be enumerated with the
-[DetourEnumerateExports](DetourEnumerateExports.md) API, and its
+[DetourEnumerateExports](DetourEnumerateExports) API, and its
 payloads can be found using the
-[DetourFindPayload](DetourFindPayload.md) API.
+[DetourFindPayload](DetourFindPayload) API.
 
 Related Samples
 ---------------
 
-[Disas](SampleDisas.md), [Einst](SampleEinst.md),
-[Tracebld](SampleTracebld.md), [Tracelnk](SampleTracelnk.md),
-[Tracereg](SampleTracereg.md).
+[Disas](SampleDisas), [Einst](SampleEinst),
+[Tracebld](SampleTracebld), [Tracelnk](SampleTracelnk),
+[Tracereg](SampleTracereg).

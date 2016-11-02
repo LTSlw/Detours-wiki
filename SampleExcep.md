@@ -7,8 +7,8 @@ enabling writes after catching the first write to a page.
 Uses
 ----
 
-[DetourAttach](DetourAttach.md),
-[DetourFindFunction](DetourFindFunction.md),
-[DetourTransactionBegin](DetourTransactionBegin.md),
-[DetourTransactionCommit](DetourTransactionCommit.md),
-[DetourUpdateThread](DetourUpdateThread.md).
+[DetourAttach](DetourAttach),
+[DetourFindFunction](DetourFindFunction),
+[DetourTransactionBegin](DetourTransactionBegin),
+[DetourTransactionCommit](DetourTransactionCommit),
+[DetourUpdateThread](DetourUpdateThread).

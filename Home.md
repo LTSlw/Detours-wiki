@@ -32,17 +32,17 @@ system libraries, such as the Windows APIs.
 
 This technical overview of Detours is divided into four sections:
 
--   [Interception of Binary Functions](OverviewInterception.md)
--   [Using Detours](OverviewUsing.md)
--   [Payloads and DLL Import Editing](OwerviewPayloads.md)
--   [Detouring 32-bit and 64-bit Processes](OverviewHelpers.md)
+-   [Interception of Binary Functions](OverviewInterception)
+-   [Using Detours](OverviewUsing)
+-   [Payloads and DLL Import Editing](OwerviewPayloads)
+-   [Detouring 32-bit and 64-bit Processes](OverviewHelpers)
 
 Developers new to Detours will find the it very useful to read all four
-technical overview sections and the [Simple](SampleSimple.md) sample.
+technical overview sections and the [Simple](SampleSimple) sample.
 
 This documentation also contains the following information:
 
--   [Detours API reference](Reference.md)
--   [Sample programs using the Detours APIs.](Samples.md)
--   [Frequently Asked Questions (FAQ)](FAQ.md)
+-   [Detours API reference](Reference)
+-   [Sample programs using the Detours APIs.](Samples)
+-   [Frequently Asked Questions (FAQ)](FAQ)
 

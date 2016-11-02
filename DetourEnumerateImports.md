@@ -54,9 +54,9 @@ Remarks
 -------
 
 If you need a pointer into the Import Address Table ("IAT"), you should
-use the [DetourEnumerateImportsEx](DetourEnumerateImportsEx.md).
+use the [DetourEnumerateImportsEx](DetourEnumerateImportsEx).
 
 Related Samples
 ---------------
 
-[Tracebld](SampleTracebld.md).
+[Tracebld](SampleTracebld).

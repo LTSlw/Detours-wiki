@@ -29,13 +29,13 @@ Remarks
 -------
 
 `DetourBinaryWrite` writes the updated binary, opened by
-[DetourBinaryOpen](DetourBinaryOpen.md), to a file.
+[DetourBinaryOpen](DetourBinaryOpen), to a file.
 
 For more information on binary editing with Detours, see [Payloads and
-DLL Import Editing](OwerviewPayloads.md) in the [Detours
-Overview](Home.md).
+DLL Import Editing](OwerviewPayloads) in the [Detours
+Overview](Home).
 
 Related Samples
 ---------------
 
-[Impmunge](SampleImpmunge.md), [Setdll](SampleSetdll.md).
+[Impmunge](SampleImpmunge), [Setdll](SampleSetdll).

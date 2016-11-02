@@ -33,7 +33,7 @@ Compiling with Detours Code
 
 ### *How do I do thing *X* with Detours?*
 
-Look in the Detours [Samples](Detours_samples.md). The Detours Samples
+Look in the Detours [Samples](Detours_samples). The Detours Samples
 are quite extensive. It is likely that anything you want to accomplish
 with Detours is covered in one of the included samples.
 

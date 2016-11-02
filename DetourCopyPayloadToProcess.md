@@ -51,11 +51,11 @@ creates a `.detours` section with the specified payload data.
 
 Code in the target process can find the payload by enumerating through
 all modules using the
-[DetourEnumerateModules](DetourEnumerateModules.md) API and
+[DetourEnumerateModules](DetourEnumerateModules) API and
 querying each module for the payload using the
-[DetourFindPayload](DetourFindPayload.md) API.
+[DetourFindPayload](DetourFindPayload) API.
 
 Related Samples
 ---------------
 
-[Tracebld](SampleTracebld.md), [WithDll](Sam_WithDll.md).
+[Tracebld](SampleTracebld), [WithDll](Sam_WithDll).

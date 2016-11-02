@@ -47,10 +47,10 @@ load a 32-bit version of `DBGHELP.DLL` even though you have written
 non-functional `DBGHELP.DLL` stub.
 
 You can test your version of `DBGHELP.DLL` by using the `SymTest`
-program from the [FindFunc](SampleFindFunc.md). directory..
+program from the [FindFunc](SampleFindFunc). directory..
 
 Related Samples
 ---------------
 
-[Cping](SampleCping.md), [Excep](SampleExcep.md).
-[FindFunc](SampleFindFunc.md).
+[Cping](SampleCping), [Excep](SampleExcep).
+[FindFunc](SampleFindFunc).

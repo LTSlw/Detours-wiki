@@ -2,9 +2,9 @@ PF\_DETOUR\_IMPORT\_FUNC\_CALLBACK\_EX
 ======================================
 
 Pointer to function called once for each entry in the IAT enumerated by
-[DetourEnumerateImportsEx](DetourEnumerateImportsEx.md). This is
+[DetourEnumerateImportsEx](DetourEnumerateImportsEx). This is
 similar to
-[PF\_DETOUR\_IMPORT\_FUNC\_CALLBACK](DetourImportFuncCallback.md)
+[PF\_DETOUR\_IMPORT\_FUNC\_CALLBACK](DetourImportFuncCallback)
 except here the last parameter points to the entry in the IAT.
 
 Definition
@@ -23,7 +23,7 @@ Parameters
 *pContext*
 :   Umodified program specific context pointer passed as pContext
     argument to
-    [DetourEnumerateImportsEx](DetourEnumerateImportsEx.md).
+    [DetourEnumerateImportsEx](DetourEnumerateImportsEx).
 
 *nOrdinal*
 :   Ordinal of imported function. 0 if the import is by name.

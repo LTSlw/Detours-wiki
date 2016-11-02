@@ -53,7 +53,7 @@ error code may be retrived after the function has returned by calling
 Remarks
 -------
 
-[DetourEnumerateImports](DetourEnumerateImports.md) and
+[DetourEnumerateImports](DetourEnumerateImports) and
 DetourEnumerateImportsEx are very similar. DetourEnumerateImports's
 callback receives a pointer to the code (or less commonly, data) pointed
 to by the Import Address Table ("IAT"). DetourEnumerateImportsEx's
@@ -62,4 +62,4 @@ callback receives a pointer into the IAT.
 Related Samples
 ---------------
 
-[Tracebld](SampleTracebld.md).
+[Tracebld](SampleTracebld).

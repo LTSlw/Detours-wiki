@@ -2,7 +2,7 @@ PF\_DETOUR\_IMPORT\_FUNC\_CALLBACK
 ==================================
 
 Pointer to function called once for each function enumerated by
-[DetourEnumerateImports](DetourEnumerateImports.md).
+[DetourEnumerateImports](DetourEnumerateImports).
 
 Definition
 ----------
@@ -20,7 +20,7 @@ Parameters
 *pContext*
 :   Umodified program specific context pointer passed as pContext
     argument to
-    [DetourEnumerateImports](DetourEnumerateImports.md).
+    [DetourEnumerateImports](DetourEnumerateImports).
 
 *nOrdinal*
 :   Ordinal of imported function. 0 if the import is by name.

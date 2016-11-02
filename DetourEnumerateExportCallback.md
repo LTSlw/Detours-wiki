@@ -2,7 +2,7 @@ PF\_DETOUR\_ENUMERATE\_EXPORT\_CALLBACK
 =======================================
 
 Pointer to function called once for each export enumerated by
-[DetourEnumerateExports](DetourEnumerateExports.md).
+[DetourEnumerateExports](DetourEnumerateExports).
 
 Definition
 ----------
@@ -20,7 +20,7 @@ Parameters
 *pContext*
 :   Umodified program specific context pointer passed as pContext
     argument to
-    [DetourEnumerateExports](DetourEnumerateExports.md).
+    [DetourEnumerateExports](DetourEnumerateExports).
 
 *nOrdinal*
 :   Ordinal of export function.

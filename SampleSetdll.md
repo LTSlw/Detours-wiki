@@ -7,18 +7,18 @@ application .EXE file.
 
 **Note:** The target binary will fail to load if the target DLL does not
 contain a exported function with ordinal \#1. For more information, see
-the [DetourBinaryEditImports](DetourBinaryEditImports.md) API.
+the [DetourBinaryEditImports](DetourBinaryEditImports) API.
 
 Related Samples
 ---------------
 
-[Withdll](SampleWithdll.md).
+[Withdll](SampleWithdll).
 
 Uses
 ----
 
-[DetourBinaryClose](DetourBinaryClose.md),
-[DetourBinaryEditImports](DetourBinaryEditImports.md),
-[DetourBinaryOpen](DetourBinaryOpen.md),
-[DetourBinaryResetImports](DetourBinaryResetImports.md),
-[DetourBinaryWrite](DetourBinaryWrite.md).
+[DetourBinaryClose](DetourBinaryClose),
+[DetourBinaryEditImports](DetourBinaryEditImports),
+[DetourBinaryOpen](DetourBinaryOpen),
+[DetourBinaryResetImports](DetourBinaryResetImports),
+[DetourBinaryWrite](DetourBinaryWrite).

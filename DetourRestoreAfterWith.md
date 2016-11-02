@@ -3,8 +3,8 @@ DetourRestoreAfterWith
 
 Restore the contents in memory import table after a process was started
 with
-[DetourCreateProcessWithDllEx](DetourCreateProcessWithDllEx.md) or
-[DetourCreateProcessWithDlls](DetourCreateProcessWithDlls.md). .
+[DetourCreateProcessWithDllEx](DetourCreateProcessWithDllEx) or
+[DetourCreateProcessWithDlls](DetourCreateProcessWithDlls). .
 
 Definition
 ----------
@@ -32,14 +32,14 @@ Remarks
 -------
 
 The
-[`DetourCreateProcessWithDllEx`](DetourCreateProcessWithDllEx.md)
+[`DetourCreateProcessWithDllEx`](DetourCreateProcessWithDllEx)
 API modifies the in-memory import table of the target PE binary program
 in the new process it creates. For correct application compatibilty, the
 changes to the import table should be removed before the application
 runs. To remove these changes,
-[`DetourCreateProcessWithDllEx`](DetourCreateProcessWithDllEx.md)
+[`DetourCreateProcessWithDllEx`](DetourCreateProcessWithDllEx)
 copies relevant reversal data into a payload in the target process using
-the [`DetourCopyPayloadToProcess`](DetourCopyPayloadToProcess.md)
+the [`DetourCopyPayloadToProcess`](DetourCopyPayloadToProcess)
 API. When called in the target process, `DetourRestoreAfterWith`
 searches for the necessary payloaded and restores the contents of the
 import table.
@@ -51,9 +51,9 @@ the target process.
 Related Samples
 ---------------
 
-[Simple](SampleFindFunc.md), [Simple](SampleSimple.md),
-[Slept](SampleSlept.md), [Traceapi](SampleTraceapi.md),
-[Tracebld](SampleTracebld.md), [Tracelnk](SampleTracelnk.md),
-[Tracemem](SampleTracemem.md), [Tracereg](SampleTracereg.md),
-[Traceser](SampleTraceser.md), [Tracetcp](SampleTracetcp.md),
-[Tryman](SampleTryman.md).
+[Simple](SampleFindFunc), [Simple](SampleSimple),
+[Slept](SampleSlept), [Traceapi](SampleTraceapi),
+[Tracebld](SampleTracebld), [Tracelnk](SampleTracelnk),
+[Tracemem](SampleTracemem), [Tracereg](SampleTracereg),
+[Traceser](SampleTraceser), [Tracetcp](SampleTracetcp),
+[Tryman](SampleTryman).

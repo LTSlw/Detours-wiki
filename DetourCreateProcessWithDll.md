@@ -4,8 +4,8 @@ DetourCreateProcessWithDll
 Create a new process and load a DLL into it..
 
 *DetourCreateProcessWithDll has been deprecated. Use
-[DetourCreateProcessWithDllEx](DetourCreateProcessWithDllEx.md) or
-[DetourCreateProcessWithDlls](DetourCreateProcessWithDlls.md)
+[DetourCreateProcessWithDllEx](DetourCreateProcessWithDllEx) or
+[DetourCreateProcessWithDlls](DetourCreateProcessWithDlls)
 instead.*
 
 Definition
@@ -98,22 +98,22 @@ import table will contain a reference to function ordinal \#1 exported
 from the detour DLL.
 
 **Note:** The new process will fail to start if the detour DLL does not
-export [DetourFinishHelperProcess](DetourFinishHelperProcess.md) as
+export [DetourFinishHelperProcess](DetourFinishHelperProcess) as
 export ordinal \#1.
 
 After the detour DLL has been loaded, it should reverse changes to the
 in-memory import table by calling
-[`DetourRestoreAfterWith`](DetourRestoreAfterWith.md). To
+[`DetourRestoreAfterWith`](DetourRestoreAfterWith). To
 facilitate reversing these changes, `DetourCreateProcessWithDll` copies
 relevant reversal data into a payload in the target process using the
-[`DetourCopyPayloadToProcess`](DetourCopyPayloadToProcess.md) API.
+[`DetourCopyPayloadToProcess`](DetourCopyPayloadToProcess) API.
 The loaded DLL should call the
-[`DetourRestoreAfterWith`](DetourRestoreAfterWith.md) API to
+[`DetourRestoreAfterWith`](DetourRestoreAfterWith) API to
 restores the contents of the import table.
 
 Related Samples
 ---------------
 
-[Tracebld](SampleTracebld.md), [Tracemem](SampleTracemem.md),
-[Tracereg](SampleTracereg.md), [Traceser](SampleTraceser.md),
-[Withdll](SampleWithdll.md).
+[Tracebld](SampleTracebld), [Tracemem](SampleTracemem),
+[Tracereg](SampleTracereg), [Traceser](SampleTraceser),
+[Withdll](SampleWithdll).

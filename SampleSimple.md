@@ -6,13 +6,13 @@ functionality to a Windows API. Modifies the `Sleep` API to record the
 number of ticks spent sleeping.
 
 The Simple example is described in more detail in [Using
-Detours](Home.md).
+Detours](Home).
 
 Uses
 ----
 
-[DetourAttach](DetourAttach.md),
-[DetourDetach](DetourDetach.md),
-[DetourTransactionBegin](DetourTransactionBegin.md),
-[DetourTransactionCommit](DetourTransactionCommit.md),
-[DetourUpdateThread](DetourUpdateThread.md).
+[DetourAttach](DetourAttach),
+[DetourDetach](DetourDetach),
+[DetourTransactionBegin](DetourTransactionBegin),
+[DetourTransactionCommit](DetourTransactionCommit),
+[DetourUpdateThread](DetourUpdateThread).

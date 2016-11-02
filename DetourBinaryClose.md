@@ -15,7 +15,7 @@ Parameters
 
 *pBinary*
 :   Pointer to the binary opened by
-    [DetourBinaryOpen](DetourBinaryOpen.md), .
+    [DetourBinaryOpen](DetourBinaryOpen), .
 
 Return value
 ------------
@@ -26,14 +26,14 @@ Remarks
 -------
 
 `DetourBinaryClose` closes the binary opened for editing by
-[DetourBinaryOpen](DetourBinaryOpen.md).
+[DetourBinaryOpen](DetourBinaryOpen).
 
 For more information on binary editing with Detours, see [Payloads and
-DLL Import Editing](OwerviewPayloads.md) in the [Detours
-Overview](Home.md).
+DLL Import Editing](OwerviewPayloads) in the [Detours
+Overview](Home).
 
 Related Samples
 ---------------
 
-[Dumpi](SampleDumpi.md), [Impmunge](SampleImpmunge.md),
-[Setdll](SampleSetdll.md).
+[Dumpi](SampleDumpi), [Impmunge](SampleImpmunge),
+[Setdll](SampleSetdll).

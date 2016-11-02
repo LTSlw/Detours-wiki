@@ -51,27 +51,27 @@ Creating a new import table serves two purposes. First, it preserves the
 original import table in case the programmer needs to reverse all
 modifications to the Windows file. Second, the new import table can
 contain renamed import DLLs and functions or entirely new DLLs and
-functions. For example, the [setdll.exe](SampleSetdll.md) program
+functions. For example, the [setdll.exe](SampleSetdll) program
 included in the Detours package, inserts an initial entry for a user's
 DLL into a target application binary. As the first entry in the
 application's import table, the user's DLL is always the first DLL to
 run in the application's address space.
 
 Detours provides APIs for editing import tables
-([DetourBinaryEditImports](DetourBinaryEditImports.md)), adding
-payloads ([DetourBinarySetPayload](DetourBinarySetPayload.md)),
+([DetourBinaryEditImports](DetourBinaryEditImports)), adding
+payloads ([DetourBinarySetPayload](DetourBinarySetPayload)),
 enumerating payloads
-([DetourBinaryEnumeratePayloads](DetourBinaryEnumeratePayloads.md)),
+([DetourBinaryEnumeratePayloads](DetourBinaryEnumeratePayloads)),
 and removing payloads
-([DetourBinaryPurgePayloads](DetourBinaryPurgePayloads.md)).
+([DetourBinaryPurgePayloads](DetourBinaryPurgePayloads)).
 Detours also provides APIs for enumerating the binary files mapped into
 an address space
-([DetourEnumerateModules](DetourEnumerateModules.md)) and locating
+([DetourEnumerateModules](DetourEnumerateModules)) and locating
 payloads within those mapped binaries
-([DetourFindPayload](DetourFindPayload.md)). Each payload is
+([DetourFindPayload](DetourFindPayload)). Each payload is
 identified by a 128-bit globally unique identifier (GUID). Payloads can
 be used to attach per-application configuration data to application
 binaries.
 
 Payloads can be copied directly into a target process using the
-[DetourCopyPayloadToProcess](DetourCopyPayloadToProcess.md) API.
+[DetourCopyPayloadToProcess](DetourCopyPayloadToProcess) API.

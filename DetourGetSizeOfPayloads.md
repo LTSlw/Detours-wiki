@@ -35,4 +35,4 @@ error code may be retrived after the function has returned by calling
 Related Samples
 ---------------
 
-[Einst](SampleEinst.md).
+[Einst](SampleEinst).

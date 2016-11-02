@@ -46,12 +46,12 @@ file, the entry point is the start of the code for the runtime startup
 runtimes. For a `.DLL file`, the entry point is the start of the code
 for the `DllMain` function.
 
-The [Slept](SampleSlept.md) sample shows how to capture program execution
+The [Slept](SampleSlept) sample shows how to capture program execution
 after DLL initialization by detouring the entry point of a program.
 
 Related Samples
 ---------------
 
-[Disas](SampleDisas.md), [Dumpe](SampleDumpe.md),
-[Dumpe](SampleFindFunc.md), [Tracebld](SampleTracebld.md),
-[Slept](SampleSlept.md).
+[Disas](SampleDisas), [Dumpe](SampleDumpe),
+[Dumpe](SampleFindFunc), [Tracebld](SampleTracebld),
+[Slept](SampleSlept).

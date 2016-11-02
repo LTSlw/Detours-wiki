@@ -24,14 +24,14 @@ Remarks
 -------
 
 `DetourTransactionAbort` aborts the current transaction created with
-[DetourTransactionBegin](DetourTransactionBegin.md). Aborting a
+[DetourTransactionBegin](DetourTransactionBegin). Aborting a
 transaction reverse the effects of any calls to the
-[DetourAttach](DetourAttach.md),
-[DetourAttachEx](DetourAttachEx.md),
-[DetourDetach](DetourDetach.md), or
-[DetourUpdateThread](DetourUpdateThread.md) APIs made within the
+[DetourAttach](DetourAttach),
+[DetourAttachEx](DetourAttachEx),
+[DetourDetach](DetourDetach), or
+[DetourUpdateThread](DetourUpdateThread) APIs made within the
 transaction.
 
 For more information on using Detours to intercept function calls, see
-[Interception of Binary Functions](OverviewInterception.md) or [Using
-Detours](OverviewUsing.md) in the [Detours Overview](Home.md).
+[Interception of Binary Functions](OverviewInterception) or [Using
+Detours](OverviewUsing) in the [Detours Overview](Home).

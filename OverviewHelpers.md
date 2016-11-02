@@ -9,8 +9,8 @@ The most common usage scenario for Detours is to detour functions in an
 existing application without modifying the orginal application binaries.
 In these scenarios, the user-supplied detour functions are packaged in a
 DLL that is loaded into the applicaiton at startup time using the
-[DetourCreateProcessWithDll](DetourCreateProcessWithDll.md) API.
-The [DetourCreateProcessWithDll](DetourCreateProcessWithDll.md) API
+[DetourCreateProcessWithDll](DetourCreateProcessWithDll) API.
+The [DetourCreateProcessWithDll](DetourCreateProcessWithDll) API
 is called from the *parent process*; it alters the in-memory copy of the
 application by inserting an import table entry for the detour DLL. This
 new import table entry causes the OS loader to load the DLL after the
@@ -22,13 +22,13 @@ In computers with 64-bit processors, Windows supports both 32-bit and
 64-bit applications. To support both 32-bit and 64-bit applications, you
 must create both 32-bit and 64-bit versions of your detour DLL. You must
 also replace all uses of the
-[DetourCreateProcessWithDll](DetourCreateProcessWithDll.md) API
+[DetourCreateProcessWithDll](DetourCreateProcessWithDll) API
 with either the
-[DetourCreateProcessWithDllEx](DetourCreateProcessWithDllEx.md) API
-or [DetourCreateProcessWithDlls](DetourCreateProcessWithDlls.md)
+[DetourCreateProcessWithDllEx](DetourCreateProcessWithDllEx) API
+or [DetourCreateProcessWithDlls](DetourCreateProcessWithDlls)
 API. The
-[DetourCreateProcessWithDllEx](DetourCreateProcessWithDllEx.md) and
-[DetourCreateProcessWithDlls](DetourCreateProcessWithDlls.md) APIs
+[DetourCreateProcessWithDllEx](DetourCreateProcessWithDllEx) and
+[DetourCreateProcessWithDlls](DetourCreateProcessWithDlls) APIs
 chooses between the 32-bit or 64-bit versions of your DLL as appropriate
 for the target application.
 
@@ -43,23 +43,23 @@ end with "32" and the name of the 64-bit DLL should end with "64". For
 example, matching DLLs would be named `foo32.dll` and `foo64.dll`.
 
 You should use the
-[DetourCreateProcessWithDllEx](DetourCreateProcessWithDllEx.md) or
-[DetourCreateProcessWithDlls](DetourCreateProcessWithDlls.md) API
+[DetourCreateProcessWithDllEx](DetourCreateProcessWithDllEx) or
+[DetourCreateProcessWithDlls](DetourCreateProcessWithDlls) API
 to start a process with your DLL. Furthermore, your DLLs must:
 
 **Export the
-[DetourFinishHelperProcess](DetourFinishHelperProcess.md) API as
+[DetourFinishHelperProcess](DetourFinishHelperProcess) API as
 export ordinal 1**.
 
-**Call the [DetourIsHelperProcess](DetourIsHelperProcess.md) API**
+**Call the [DetourIsHelperProcess](DetourIsHelperProcess) API**
 in your `DllMain` function. Immediately return TRUE if
-[DetourIsHelperProcess](DetourIsHelperProcess.md) return TRUE.
+[DetourIsHelperProcess](DetourIsHelperProcess) return TRUE.
 
 **Call the
-[DetourCreateProcessWithDllEx](DetourCreateProcessWithDllEx.md) or
-[DetourCreateProcessWithDlls](DetourCreateProcessWithDlls.md) API**
+[DetourCreateProcessWithDllEx](DetourCreateProcessWithDllEx) or
+[DetourCreateProcessWithDlls](DetourCreateProcessWithDlls) API**
 instead of
-[DetourCreateProcessWithDll](DetourCreateProcessWithDll.md) to
+[DetourCreateProcessWithDll](DetourCreateProcessWithDll) to
 create new target processes.
 
 How It Works
@@ -67,16 +67,16 @@ How It Works
 
 In the case where both the parent process and the target process are the
 same, such as both 32-bit or both 64-bit, the
-[DetourCreateProcessWithDllEx](DetourCreateProcessWithDllEx.md) API
+[DetourCreateProcessWithDllEx](DetourCreateProcessWithDllEx) API
 works the same as the
-[DetourCreateProcessWithDll](DetourCreateProcessWithDll.md) API.
+[DetourCreateProcessWithDll](DetourCreateProcessWithDll) API.
 
 When the parent process is 32-bit and the target is 64-bit or the parent
 is 64-bit and the target is 32-bit,
-[DetourCreateProcessWithDllEx](DetourCreateProcessWithDllEx.md)
+[DetourCreateProcessWithDllEx](DetourCreateProcessWithDllEx)
 creates a *helper process* by loading your DLL into a `rundll32.exe`
 process, and calling
-[DetourFinishHelperProcess](DetourFinishHelperProcess.md) through
+[DetourFinishHelperProcess](DetourFinishHelperProcess) through
 export Ordinal 1. This API patches up the application's import table
 using the correct 32-bit or 64-bit code.
 
@@ -99,18 +99,18 @@ For more information on `rundll32.exe`, see
 Related APIs:
 -------------
 
-[DetourCreateProcessWithDllEx](DetourCreateProcessWithDllEx.md),
-[DetourCreateProcessWithDlls](DetourCreateProcessWithDlls.md),
-[DetourFinishHelperProcess](DetourFinishHelperProcess.md),
-[DetourIsHelperProcess](DetourIsHelperProcess.md),
-[DetourRestoreAfterWith](DetourRestoreAfterWith.md).
+[DetourCreateProcessWithDllEx](DetourCreateProcessWithDllEx),
+[DetourCreateProcessWithDlls](DetourCreateProcessWithDlls),
+[DetourFinishHelperProcess](DetourFinishHelperProcess),
+[DetourIsHelperProcess](DetourIsHelperProcess),
+[DetourRestoreAfterWith](DetourRestoreAfterWith).
 
 Related Samples
 ---------------
 
-[Simple](SampleFindFunc.md), [Simple](SampleSimple.md),
-[Slept](SampleSlept.md), [Traceapi](SampleTraceapi.md),
-[Tracebld](SampleTracebld.md), [Tracelnk](SampleTracelnk.md),
-[Tracemem](SampleTracemem.md), [Tracereg](SampleTracereg.md),
-[Traceser](SampleTraceser.md), [Tracetcp](SampleTracetcp.md),
-[Tryman](SampleTryman.md).
+[Simple](SampleFindFunc), [Simple](SampleSimple),
+[Slept](SampleSlept), [Traceapi](SampleTraceapi),
+[Tracebld](SampleTracebld), [Tracelnk](SampleTracelnk),
+[Tracemem](SampleTracemem), [Tracereg](SampleTracereg),
+[Traceser](SampleTraceser), [Tracetcp](SampleTracetcp),
+[Tryman](SampleTryman).

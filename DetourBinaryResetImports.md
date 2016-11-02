@@ -15,7 +15,7 @@ Parameters
 
 *pBinary*
 :   Pointer to the binary opened by
-    [DetourBinaryOpen](DetourBinaryOpen.md).
+    [DetourBinaryOpen](DetourBinaryOpen).
 
 Return value
 ------------
@@ -27,13 +27,13 @@ Remarks
 
 `DetourBinaryResetImports`Removes all Detours edits made to the import
 table of a binary opened by
-[DetourBinaryOpen](DetourBinaryOpen.md).
+[DetourBinaryOpen](DetourBinaryOpen).
 
 For more information on binary editing with Detours, see [Payloads and
-DLL Import Editing](OwerviewPayloads.md) in the [Detours
-Overview](Home.md).
+DLL Import Editing](OwerviewPayloads) in the [Detours
+Overview](Home).
 
 Related Samples
 ---------------
 
-[Setdll](SampleSetdll.md).
+[Setdll](SampleSetdll).

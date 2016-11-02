@@ -66,25 +66,25 @@ with the `detours.lib` library.
 >         return TRUE;
 >     }
 
-###### Figure 5. [Simple](SampleSimple.md) detour to modify the Windows Sleep API.
+###### Figure 5. [Simple](SampleSimple) detour to modify the Windows Sleep API.
 
 ------------------------------------------------------------------------
 
 Interception of the target function is enabled by invoking the
-[DetourAttach](DetourAttach.md) API within a detour transaction. A
+[DetourAttach](DetourAttach) API within a detour transaction. A
 detour transaction is marked by calls to the
-[DetourTransactionBegin](DetourTransactionBegin.md) API and the
-[DetourTransactionCommit](DetourTransactionCommit.md) API. The
-[DetourAttach](DetourAttach.md) API takes two arguments: the
+[DetourTransactionBegin](DetourTransactionBegin) API and the
+[DetourTransactionCommit](DetourTransactionCommit) API. The
+[DetourAttach](DetourAttach) API takes two arguments: the
 address of the target pointer and the pointer to the detour function.
 The target function is not given as an argument because it must already
 be stored in the target pointer.
 
-The [DetourUpdateThread](DetourUpdateThread.md) API enlists threads
+The [DetourUpdateThread](DetourUpdateThread) API enlists threads
 in the transaction so that their instruction pointers are appropriately
 updated when the transaction commits.
 
-The [DetourAttach](DetourAttach.md) API allocates and prepares a
+The [DetourAttach](DetourAttach) API allocates and prepares a
 trampoline for calling the target function. When the detour transaction
 commits, the target function and trampoline are rewritten and the target
 pointer is updated to point to the trampoline function.
@@ -97,9 +97,9 @@ target function becomes simply a subroutine callable by the detour
 function.
 
 Interception of a target function is removed by calling the
-[DetourDetach](DetourDetach.md) API within a detour transaction.
-Like the [DetourAttach](DetourAttach.md) API, the
-[DetourDetach](DetourDetach.md) API takes two arguments: the
+[DetourDetach](DetourDetach) API within a detour transaction.
+Like the [DetourAttach](DetourAttach) API, the
+[DetourDetach](DetourDetach) API takes two arguments: the
 address of the target pointer and the pointer to the detour function.
 When the detour transaction commits, the target function is rewritten
 and restored to its original code, the trampoline function is deleted,
@@ -110,16 +110,16 @@ In cases where detour functions need to inserted into an existing
 application without source code access, the detour functions should be
 packaged in a DLL. The DLL can be loaded into a new process at creation
 time using the
-[DetourCreateProcessWithDllEx](DetourCreateProcessWithDllEx.md) or
-[DetourCreateProcessWithDlls](DetourCreateProcessWithDllEx.md)
+[DetourCreateProcessWithDllEx](DetourCreateProcessWithDllEx) or
+[DetourCreateProcessWithDlls](DetourCreateProcessWithDllEx)
 APIs. If a DLL is inserted using `DetourCreateProcessWithDllEx` or
 `DetourCreateProcessWithDlls`, the DllMain function must call the
-[DetourRestoreAfterWith](DetourRestoreAfterWith.md) API. If the DLL
+[DetourRestoreAfterWith](DetourRestoreAfterWith) API. If the DLL
 may be used in mixed 32-bit and 64-bit environments, then the DllMain
 function must call the
-[DetourIsHelperProcess](DetourIsHelperProcess.md) API. The DLL must
+[DetourIsHelperProcess](DetourIsHelperProcess) API. The DLL must
 export the
-[DetourFinishHelperProcess](DetourFinishHelperProcess.md) API as
+[DetourFinishHelperProcess](DetourFinishHelperProcess) API as
 export Ordinal 1, which will be called by `rundll32.exe` to perform the
 helper tasks.
 
@@ -127,7 +127,7 @@ NOTE: Microsoft in no way warrants or supports any Microsoft or
 third-party code that has been altered either with a detour or with any
 other mechanism.
 
-The [withdll.exe](SampleWithdll.md) program include in the Detours
+The [withdll.exe](SampleWithdll) program include in the Detours
 package uses the
-[DetourCreateProcessWithDlls](DetourCreateProcessWithDlls.md) API
+[DetourCreateProcessWithDlls](DetourCreateProcessWithDlls) API
 to start a new process with a named DLL.

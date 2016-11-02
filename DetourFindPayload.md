@@ -53,14 +53,14 @@ Remarks
 
 `DetourFindPayload` returns the address of the specified payload within
 a module. Payloads can either be created at compile link time, see the
-[Einst](SampleEinst.md), or can be inserted it an existing binary using
-the [DetourBinarySetPayload](DetourBinarySetPayload.md) API.
+[Einst](SampleEinst), or can be inserted it an existing binary using
+the [DetourBinarySetPayload](DetourBinarySetPayload) API.
 
 For more information on binary editing with Detours and paylods, see
-[Payloads and DLL Import Editing](OwerviewPayloads.md) in the [Detours
-Overview](Home.md).
+[Payloads and DLL Import Editing](OwerviewPayloads) in the [Detours
+Overview](Home).
 
 Related Samples
 ---------------
 
-[Einst](SampleEinst.md), [Tracebld](SampleTracebld.md).
+[Einst](SampleEinst), [Tracebld](SampleTracebld).

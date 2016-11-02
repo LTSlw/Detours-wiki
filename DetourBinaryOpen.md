@@ -39,11 +39,11 @@ Remarks
 memory for editing.
 
 For more information on binary editing with Detours, see [Payloads and
-DLL Import Editing](OwerviewPayloads.md) in the [Detours
-Overview](Home.md).
+DLL Import Editing](OwerviewPayloads) in the [Detours
+Overview](Home).
 
 Related Samples
 ---------------
 
-[Dumpi](SampleDumpi.md), [Impmunge](SampleImpmunge.md),
-[Setdll](SampleSetdll.md).
+[Dumpi](SampleDumpi), [Impmunge](SampleImpmunge),
+[Setdll](SampleSetdll).

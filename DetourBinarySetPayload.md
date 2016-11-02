@@ -18,7 +18,7 @@ Parameters
 
 *pBinary*
 :   Pointer to the binary opened by
-    [DetourBinaryOpen](DetourBinaryOpen.md)
+    [DetourBinaryOpen](DetourBinaryOpen)
 
 *rguid*
 :   GUID of the payload to be added to binary.
@@ -33,12 +33,12 @@ Remarks
 -------
 
 `DetourBinarySetPayload` attaches a payload to a binary opened by
-[DetourBinaryOpen](DetourBinaryOpen.md). The payload can be located
-at runtime using the [DetourFindPayload](DetourFindPayload.md) API.
+[DetourBinaryOpen](DetourBinaryOpen). The payload can be located
+at runtime using the [DetourFindPayload](DetourFindPayload) API.
 
 For more information on binary editing with Detours, see [Payloads and
-DLL Import Editing](OwerviewPayloads.md) in the [Detours
-Overview](Home.md).
+DLL Import Editing](OwerviewPayloads) in the [Detours
+Overview](Home).
 
 Return value
 ------------

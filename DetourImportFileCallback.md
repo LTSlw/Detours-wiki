@@ -2,7 +2,7 @@ PF\_DETOUR\_IMPORT\_FILE\_CALLBACK
 ==================================
 
 Pointer to function called once for each file enumerated by
-[DetourEnumerateImports](DetourEnumerateImports.md).
+[DetourEnumerateImports](DetourEnumerateImports).
 
 Definition
 ----------
@@ -19,7 +19,7 @@ Parameters
 *pContext*
 :   Umodified program specific context pointer passed as pContext
     argument to
-    [DetourEnumerateImports](DetourEnumerateImports.md).
+    [DetourEnumerateImports](DetourEnumerateImports).
 
 *hModule*
 :   Module handle within the process of the imported file. NULL to

@@ -41,4 +41,4 @@ error code may be retrived after the function has returned by calling
 Related Samples
 ---------------
 
-[Disas](SampleDisas.md), [Tracebld](SampleTracebld.md).
+[Disas](SampleDisas), [Tracebld](SampleTracebld).

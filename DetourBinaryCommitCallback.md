@@ -2,7 +2,7 @@ PF\_DETOUR\_BINARY\_COMMIT\_CALLBACK
 ====================================
 
 Pointer to function called at the end of editing an import table using
-the [DetourBinaryEditImports](DetourEnumerateExports.md) API.
+the [DetourBinaryEditImports](DetourEnumerateExports) API.
 
 Definition
 ----------
@@ -17,7 +17,7 @@ Parameters
 *pContext*
 :   Umodified program specific context pointer passed as pContext
     argument to
-    [DetourBinaryEditImports](DetourBinaryEditImports.md).
+    [DetourBinaryEditImports](DetourBinaryEditImports).
 
 Return value
 ------------

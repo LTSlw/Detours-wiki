@@ -48,6 +48,6 @@ error code may be retrived after the function has returned by calling
 Related Samples
 ---------------
 
-[Disas](SampleDisas.md), [Dumpe](SampleDumpe.md), [Disas](SampleDisas.md),
-[Einst](SampleEinst.md), [Tracelnk](SampleTracelnk.md),
-[Tracereg](SampleTracereg.md).
+[Disas](SampleDisas), [Dumpe](SampleDumpe), [Disas](SampleDisas),
+[Einst](SampleEinst), [Tracelnk](SampleTracelnk),
+[Tracereg](SampleTracereg).

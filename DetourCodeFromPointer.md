@@ -40,10 +40,10 @@ code. On these platforms, the indirection labels also contains a pointer
 to the global (or static) data associated with the function.
 
 For more information on using Detours to intercept function calls, see
-[Interception of Binary Functions](OverviewInterception.md) or [Using
-Detours](OverviewUsing.md) in the [Detours Overview](Home.md).
+[Interception of Binary Functions](OverviewInterception) or [Using
+Detours](OverviewUsing) in the [Detours Overview](Home).
 
 Related Samples
 ---------------
 
-[Slept](SampleSlept.md), [Tracebld](SampleTracebld.md).
+[Slept](SampleSlept), [Tracebld](SampleTracebld).

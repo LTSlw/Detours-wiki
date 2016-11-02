@@ -32,7 +32,7 @@ Remarks
 
 `DetourUpdateThread` enlists the specified thread for update when the
 current transaction, opened by the
-[DetourTransactionBegin](DetourTransactionBegin.md) API, commits.
+[DetourTransactionBegin](DetourTransactionBegin) API, commits.
 
 When a detour transaction commmits, Detours insures that all threads
 enlisted in the transcation via the `DetourUpdateThread` API are updated
@@ -44,17 +44,17 @@ transaction commits. As a result, they may attempt to execute an illegal
 combination of old and new code.
 
 For more information on using Detours to intercept function calls, see
-[Interception of Binary Functions](OverviewInterception.md) or [Using
-Detours](OverviewUsing.md) in the [Detours Overview](Home.md).
+[Interception of Binary Functions](OverviewInterception) or [Using
+Detours](OverviewUsing) in the [Detours Overview](Home).
 
 Related Samples
 ---------------
 
-[Commem](SampleCommem.md), [Cping](SampleCping.md),
-[Dtest](SampleDtest.md), [Excep](SampleExcep.md),
-[FindFunc](SampleFindFunc.md), [Member](SampleMember.md),
-[Simple](SampleSimple.md), [Slept](SampleSlept.md),
-[Traceapi](SampleTraceapi.md), [Tracebld](SampleTracebld.md),
-[Tracelnk](SampleTracelnk.md), [Tracemem](SampleTracemem.md),
-[Tracereg](SampleTracereg.md), [Traceser](SampleTraceser.md),
-[Tracetcp](SampleTracetcp.md), [Tryman](SampleTryman.md).
+[Commem](SampleCommem), [Cping](SampleCping),
+[Dtest](SampleDtest), [Excep](SampleExcep),
+[FindFunc](SampleFindFunc), [Member](SampleMember),
+[Simple](SampleSimple), [Slept](SampleSlept),
+[Traceapi](SampleTraceapi), [Tracebld](SampleTracebld),
+[Tracelnk](SampleTracelnk), [Tracemem](SampleTracemem),
+[Tracereg](SampleTracereg), [Traceser](SampleTraceser),
+[Tracetcp](SampleTracetcp), [Tryman](SampleTryman).
