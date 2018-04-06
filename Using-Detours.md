@@ -1,6 +1,3 @@
-Using Detours
-=============
-
 Two things are necessary in order to detour a target function: a target
 pointer containing the address of the target function and a detour
 function. For proper interception the target function, detour function,
