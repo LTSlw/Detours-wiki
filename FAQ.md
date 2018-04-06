@@ -7,14 +7,14 @@ The questions are grouped by general topic and area of interest.
 Compatibility
 -------------
 
-### *Is Detours compatible with Windows 8?*
+### *Is Detours compatible with Windows 10?*
 
-Yes. Detours is fully compatible with Windows 8 desktop and server
+Yes. Detours is fully compatible with Windows 10 desktop and server
 applications. While Detours can be used in the development and testing
-of Window Store apps, new Windows Store apps for Windows 8 can not ship
+of Window Store apps, new Windows Store apps for Windows 10 can not ship
 with Detours.
 
-### *Why can't my Windows Store app for Windows 8 include Detours?*
+### *Why can't my Windows Store app for Windows 10 include Detours?*
 
 Windows Store apps may use only a subset of the Win32 API. Detours
 requires several Win32 APIs that are forbidden in for Windows App
@@ -109,26 +109,26 @@ Licensing
 
 ### *Can Detours be used in commercial applications?*
 
-Yes, with a Detours Professional license. You can purchase Detours
-Professional from the [Microsoft
-Store](http://www.microsoftstore.com/store/msstore/en_US/pd/productID.216531800/search.true).
+Detours is licensed under the [MIT license](https://github.com/Microsoft/Detours/blob/master/LICENSE.md), 
+which allows commercial use.
 
 Bug Reports
 -----------
 
-### *How do I report a bug?*
+### *How do I report a bug or an issue?*
 
-Please send detailed bug reports to
+Please open an issue on the [GitHub issue tracker system](https://github.com/Microsoft/Detours/issues).
+In your issue, please be sure to include the version of Detours that are you are using.
+Before opening an issue, please make every effort to ensure that
+the problem is not an error in your own code or your usage of Detours.
+The most common sources of user error are covered in this FAQ.
+
+You can also send detailed bug reports to
 [detours@microsoft.com](mailto:detours@microsoft.com?subject=DETOURS%20BUG%20REPORT).
-Bug reports may be used to fix bugs in future versions of the Detours
-package. Please include the text "DETOURS BUG REPORT" in the subject
+Please include the text "DETOURS BUG REPORT" in the subject
 line. Within the body of your message, please include the first line
 from the README.TXT file which contains the full description of the
 version Detours you are using including the Build number.
-
-Before submitted a bug report, please make every effort to insure that
-the problem is not an error in your own code or your usage of Detours.
-The most common sources of user error are covered in this FAQ.
 
 The detours@microsoft.com email address is for bug reports only, it is
 not a product support line.
