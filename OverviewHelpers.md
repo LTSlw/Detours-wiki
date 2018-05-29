@@ -1,10 +1,6 @@
 Detouring 32-bit and 64-bit Processes
 =====================================
 
-***Note: Only the Professional editions of Detours support 64-bit
-processes. The non-commercial, Express editions of Detours only support
-32-bit x86 processes.***
-
 The most common usage scenario for Detours is to detour functions in an
 existing application without modifying the orginal application binaries.
 In these scenarios, the user-supplied detour functions are packaged in a
