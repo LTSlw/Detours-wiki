@@ -25,6 +25,7 @@ Detours includes the following samples:
 -   [Dtest](SampleDtest)
 -   [Dumpe](SampleDumpe)
 -   [Dumpi](SampleDumpi)
+-   [dynamic_alloc](SampleDynamicAlloc)
 -   [Einst](SampleEinst)
 -   [Excep](SampleExcep)
 -   [FindFunc](SampleFindFunc)
