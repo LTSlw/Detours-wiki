@@ -13,7 +13,7 @@ with the `detours.lib` library.
 
 ------------------------------------------------------------------------
 
-> ``
+> 
 >
 >     #include <windows.h>
 >     #include <detours.h>
